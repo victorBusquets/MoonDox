@@ -1,0 +1,22 @@
+{
+  "name": "mundos",
+  "version": "1.0.0",
+  "description": "Proyecto canvas de ua galaxia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victor Busquets Boro",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.7.7",
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-flatten": "^0.2.0",
+    "gulp-less": "^3.0.5",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.2.0"
+  }
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es" >
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Pruebas canvas</title>
+		<link rel="stylesheet" type="text/css" media="all" href="css/styles-min.css">
+		<link rel="stylesheet" type="text/css" media="all" href="libs/font-awesome/css/font-awesome.css">
+	</head>
+	<body>
+		<div class="capaVisible">
+			<div class="botonesMovimiento">
+				<span data-dir="l-u" class="l-u"></span>
+				<span data-dir="u" 	 class="u"></span>
+				<span data-dir="r-u" class="r-u"></span>
+				<span data-dir="r" 	 class="r"></span>				
+				<span data-dir="r-d" class="r-d"></span>
+				<span data-dir="d" 	 class="d"></span>
+				<span data-dir="l-d" class="l-d"></span>
+				<span data-dir="l" 	 class="l"></span>
+			</div>
+			<canvas id="planetas"  width="4500px" height="3000px"></canvas>
+			<canvas id="estrellas" width="1500px" height="1000px"></canvas>
+			<canvas id="nave" 	   width="50px" height="70px"></canvas>
+		</div>
+
+		<div class="menu">
+			<div class="menuOpciones">
+				<h4>Menu opciones</h4>
+				<div class="botonCheckbox opcion">
+					<input type="checkbox" class="nombrePlanetas"/>
+					Mostrar nombres de planetas: 
+					<span class="off">off</span>
+					<span class="on">on</span>
+				</div>
+				<div class="botonCheckbox opcion">
+					<input type="checkbox" class="nombreSatelites"/>
+					Mostrar nombres de satelites: 
+					<span class="off">off</span>
+					<span class="on">on</span>
+				</div>
+				<div class="botonCheckbox opcion">
+					<input type="checkbox" class="fijarMovimiento"/>
+					Fijar movimiento pantalla: 
+					<span class="off">off</span>
+					<span class="on">on</span>
+				</div>
+				<div class="centrarSistema opcion">
+					Ir al centro del sistema
+				</div>
+				<div class="cerrarMenu">
+					Cerrar menu
+				</div>
+			</div>
+		</div>
+
+		<!-- Librerias externas -->		
+		<script type="text/javascript" src="libs/jquery/dist/jquery.js"></script>
+		<!-- Funciones comunes al resto de ficheros -->
+		<script type="text/javascript" src="js/utils.js"></script>
+		<!-- Objetos -->
+		<script type="text/javascript" src="js/objetos/Canvas.js"></script>
+ 		<script type="text/javascript" src="js/objetos/Constelacion.js"></script>
+ 		<script type="text/javascript" src="js/objetos/Estrella.js"></script>
+ 		<script type="text/javascript" src="js/objetos/Planeta.js"></script>
+ 		<script type="text/javascript" src="js/objetos/Satelite.js"></script>
+ 		<script type="text/javascript" src="js/objetos/SistemaPlanetario.js"></script>
+ 		<script type="text/javascript" src="js/objetos/Sprite.js"></script>
+ 		<!-- C -->
+ 		<script type="text/javascript" src="js/variables.js"></script>
+		<script type="text/javascript" src="js/configuracion.js"></script>
+		<script type="text/javascript" src="js/sala.js"></script>
+		<script type="text/javascript" src="js/principal.canvas.js"></script>
+		<script type="text/javascript" src="js/movimiento.js"></script>
+	</body>
+</html>

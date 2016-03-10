@@ -1,0 +1,16 @@
+{
+  "name": "Mundos",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Victor Busquets Boro"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "font-awesome": "~4.5.0"
+  }
+}

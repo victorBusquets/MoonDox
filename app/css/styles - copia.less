@@ -1,0 +1,189 @@
+* { 
+	margin:0; 
+	padding:0; 
+}
+
+body{
+	width:100%;
+	height:100%;
+	margin:0;
+}
+
+canvas{
+	display:block;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.capaVisible{
+	overflow: hidden;
+	background: black;
+	position: relative;
+	z-index: 0;
+
+}
+.capaVisible .botonesMovimiento{
+	z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.capaVisible .botonesMovimiento span{
+	position:absolute;
+    color: white;
+    font-size: 8px;
+    text-align: center;
+}
+
+.capaVisible .botonesMovimiento span.l, .capaVisible .botonesMovimiento span.r{
+	height: 40%;
+	width: 30%;
+	top:30%;
+}
+
+.capaVisible .botonesMovimiento span.d, .capaVisible .botonesMovimiento span.u{
+	width: 40%;
+	height: 30%;
+	left:30%;
+}
+
+.capaVisible .botonesMovimiento span.r-d{
+	right: 0;
+	width: 30%;
+	height: 30%;
+}
+
+.capaVisible .botonesMovimiento span.l-d{
+	left: 0;
+	width: 30%;
+	height: 30%;
+}
+
+.capaVisible .botonesMovimiento span.r-u{
+	right: 0;
+	width: 30%;
+	height: 30%;
+}
+
+.capaVisible .botonesMovimiento span.l-u{
+	left: 0;
+	width: 30%;
+	height: 30%;
+}
+
+.capaVisible .botonesMovimiento span.d,
+.capaVisible .botonesMovimiento span.r-d,
+.capaVisible .botonesMovimiento span.l-d{
+	bottom:0;
+}
+
+.capaVisible .botonesMovimiento span.u,
+.capaVisible .botonesMovimiento span.r-u,
+.capaVisible .botonesMovimiento span.l-u{
+	top:0;
+}
+
+.capaVisible .botonesMovimiento span.l{
+	left:0;
+}
+
+.capaVisible .botonesMovimiento span.r{
+	right:0;
+}
+
+.menu{
+	display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background: rgba(162, 162, 162, 0.23);
+}
+
+.menu.abierto{
+	display: block;
+}
+
+.menu h4{
+    border-bottom: 1px solid;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.menu div{
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+.menu .menuOpciones .opcion{
+    background: #ACACAC;
+    border: solid black 1px;
+    border-radius: 5px;
+    height: 25px;
+    position: relative;
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+}
+
+.menu .menuOpciones .opcion:hover,
+.menu .menuOpciones .opcion.activo{
+    background: #6A6868;
+    cursor: pointer;
+}
+.menu .menuOpciones .opcion .off,
+.menu .menuOpciones .opcion.activo .on{
+    display: inline-block;
+}
+
+.menu .menuOpciones .opcion .on,
+.menu .menuOpciones .opcion.activo .off{
+    display: none;
+}
+
+.menu .menuOpciones .opcion input{
+    display: none;
+}
+
+.menu .menuOpciones{
+    width: 60%;
+    height: 60%;
+    padding: 5%;
+    border-radius: 25px;
+    display: inline-block;
+    margin-left: 15%;
+    margin-top: 50px;
+    background: white;
+    position: relative;
+    top: 0;
+    left: 0;
+	z-index: 21;
+}
+
+.menu .cerrarMenu{
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.menu .cerrarMenu:hover{
+    background: rgba(255, 0, 0, 0.35);
+}
+
+#estrellas{
+	z-index: 1;
+}
+
+#planetas{
+	z-index: 2;
+}
